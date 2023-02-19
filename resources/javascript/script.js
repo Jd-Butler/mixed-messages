@@ -49,7 +49,7 @@ const updateQuote = () => {
     document.getElementById("author").innerHTML = "-" + quotes[index].author;
 }   
 
-window.onload = function () {
+window.onload = () => {
     updateQuote();
 document.getElementById("generate").addEventListener("click", updateQuote);
 }
